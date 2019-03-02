@@ -16,7 +16,7 @@
       #service_name == database_name
       service_name: "{{ oracle_service_name }}"
       #schema == DB user
-      schema: "{{ oracle_schema_name }}"
+      #schema: "{{ oracle_schema_name }}"
       #schema_password == DB user password
       schema_password: "{{ oracle_schema_password }}"
       update_password: always
