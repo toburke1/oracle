@@ -14,7 +14,7 @@
       #must be sysdba to change passwords
       mode: sysdba
       #service_name == database_name
-      #service_name: "{{ oracle_service_name }}"
+      service_name: "{{ oracle_service_name }}"
       #schema == DB user
       #schema: "{{ oracle_schema_name }}"
       #schema_password == DB user password
