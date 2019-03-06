@@ -9,8 +9,8 @@
       #hostname: localhost
       #optional default value shown
       #port: 1521
-      user: testuser
-      password: R3dh4t2019$
+      user: system
+      password: R3dh4t11
       #must be sysdba to change passwords
       mode: sysdba
       #service_name == database_name
@@ -18,6 +18,6 @@
       #schema == DB user
       schema: XE
       #schema_password == DB user password
-      schema_password: R3dh4t123$
+      schema_password: R3dh4t123
       update_password: always
       state: present
