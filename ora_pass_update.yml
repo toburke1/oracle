@@ -9,15 +9,15 @@
       #hostname: localhost
       #optional default value shown
       #port: 1521
-      user: system
-      password: R3dh4t11
+      user: "{{ oracle_dba_username }}"
+      password: "{{ oracle_dba_password }}"
       #must be sysdba to change passwords
       mode: sysdba
       #service_name == database_name
-      service_name: XE
+      service_name: "{{ oracle_service_name }}"
       #schema == DB user
-      schema: XE
+      schema: "{{ oracle_schema_name }}"
       #schema_password == DB user password
-      schema_password: R3dh4t123
+      schema_password: "{{ oracle_schema_password }}"
       update_password: always
       state: present
