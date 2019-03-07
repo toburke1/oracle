@@ -5,5 +5,5 @@
   - name: copy sql files to host
     copy: src=/home/oracle/software/changepwd.sql dest=/tmp/changepwd.sql
   - name: change passwd
-    shell: 'sqlplus / as sysdba @/tmp/changepwd.sql'    
+    shell: sqlplus / as sysdba @/tmp/changepwd.sql    
     
