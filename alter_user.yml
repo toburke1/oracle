@@ -2,8 +2,8 @@
 - name: alter user
   hosts: all
   tasks:
-    - name: copy sql files to host
-      copy: src=/home/oracle/software/changepwd.sql dest=/tmp/changepwd.sql
-    - name: change passwd
-      shell: 'sqlplus / as sysdba @/tmp/changepwd.sql'    
+  - name: copy sql files to host
+    copy: src=/home/oracle/software/changepwd.sql dest=/tmp/changepwd.sql
+  - name: change passwd
+    shell: 'sqlplus / as sysdba @/tmp/changepwd.sql'    
     
